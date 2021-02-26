@@ -1,24 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Randomiser" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="9197fce789cd4ce2aa250ada6a6f408d" translatesAutoresizingMaskIntoConstraints="NO" id="ysd-El-Cb0">
+                                <rect key="frame" x="-60" y="0.0" width="534" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhV-jo-klo">
+                                <rect key="frame" x="20" y="137" width="374" height="324"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLP-UO-zZ3">
+                                <rect key="frame" x="97" y="568" width="221" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="RKr-7H-TxQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="18"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="pushButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uHQ-rZ-xFK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tdp-4M-E3x">
+                                <rect key="frame" x="78" y="540" width="258" height="20"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🥠" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xba-71-DeQ">
+                                <rect key="frame" x="97" y="657" width="221" height="143.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="120"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dhV-jo-klo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="93" id="0gS-0D-lYS"/>
+                            <constraint firstItem="LLP-UO-zZ3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="97" id="0uf-Px-Rh1"/>
+                            <constraint firstItem="LLP-UO-zZ3" firstAttribute="top" secondItem="dhV-jo-klo" secondAttribute="bottom" constant="107" id="IsU-Te-F9d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dhV-jo-klo" secondAttribute="trailing" constant="20" id="JGH-tg-06T"/>
+                            <constraint firstItem="Tdp-4M-E3x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="78" id="LfZ-So-wk4"/>
+                            <constraint firstItem="Xba-71-DeQ" firstAttribute="trailing" secondItem="LLP-UO-zZ3" secondAttribute="trailing" id="MsQ-mC-2sp"/>
+                            <constraint firstItem="Xba-71-DeQ" firstAttribute="leading" secondItem="LLP-UO-zZ3" secondAttribute="leading" id="Pag-7o-IYn"/>
+                            <constraint firstItem="Xba-71-DeQ" firstAttribute="top" secondItem="LLP-UO-zZ3" secondAttribute="bottom" constant="50" id="Q2D-jz-Oeh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LLP-UO-zZ3" secondAttribute="trailing" constant="96" id="bcA-RD-LY0"/>
+                            <constraint firstItem="Xba-71-DeQ" firstAttribute="centerX" secondItem="LLP-UO-zZ3" secondAttribute="centerX" id="feD-zx-CsT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LLP-UO-zZ3" secondAttribute="bottom" constant="255" id="kuU-1N-BSQ"/>
+                            <constraint firstItem="dhV-jo-klo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="n3d-bT-HFj"/>
+                            <constraint firstItem="LLP-UO-zZ3" firstAttribute="top" secondItem="Tdp-4M-E3x" secondAttribute="bottom" constant="8" symbolic="YES" id="n9Z-KR-Jyx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tdp-4M-E3x" secondAttribute="trailing" constant="78" id="vbN-C6-sfg"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonOutlet" destination="LLP-UO-zZ3" id="2bB-QK-N3v"/>
+                        <outlet property="countTittle" destination="Tdp-4M-E3x" id="hyF-BT-xf5"/>
+                        <outlet property="labelOutlet" destination="dhV-jo-klo" id="gTJ-NU-abt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="9197fce789cd4ce2aa250ada6a6f408d" width="499" height="836"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
